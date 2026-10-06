@@ -1,7 +1,7 @@
 # Assignment 2 Submission
 ## About me
 
-- GitHub username: CharlesTogle
+- GitHub username: charlesgobeast
 - Section: IV-DCSAD
 - IAM user name that I signed in with: dcsad-g04
 - X: 117
