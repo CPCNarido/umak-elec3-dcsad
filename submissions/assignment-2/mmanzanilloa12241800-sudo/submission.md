@@ -177,3 +177,4 @@ The private subnet (10.100.1.0/24). It has no route to the internet gateway, so 
 What is your question, and what made you think of it?
 
 If a NAT gateway is in a public subnet and that subnet loses its 0.0.0.0/0 route to the internet gateway, can the private subnet still download updates?
+What made me think of it: the NAT gateway diagram shows the NAT gateway sitting in a public subnet, so I wondered what happens if that subnet stops being public.
