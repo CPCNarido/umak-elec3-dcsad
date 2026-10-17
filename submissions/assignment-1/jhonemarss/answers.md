@@ -1,5 +1,4 @@
-**ANSWER_1:** The Course Materials Portal cannot read `/etc/course-portal/portal.conf` because it does not have permission to access the file.
-
+**ANSWER_1:** The Course Materials Portal cannot read /etc/course-portal/portal.conf because the application log reports Permission denied.
 **ANSWER_2:** The file is owned by `root`, and its group is `course-portal`. Its current permission is `rw-------` (600), which means only the owner can read and write to it. Even though the `course-portal` account belongs to the `course-portal` group, the group has no permissions, so the portal cannot read the file.
 
 **ANSWER_3:** `640`
