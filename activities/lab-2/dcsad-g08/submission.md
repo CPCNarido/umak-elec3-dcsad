@@ -10,8 +10,8 @@
 - Availability Zone: ap-southeast-1b
 
 ## Proof (Screenshots)
-1. **Activity History:** Add a screenshot showing the Auto Scaling group's Activity history when the second instance launched.
-   
+1. **Activity History:** Add a screenshot showing the Auto Scaling group's Activity history when the second instance launched. Captured via CloudTrail because the ASG was deleted during Step 7 clean-up
+
    ![Activity History](activity_history.png)
 
 2. **CloudWatch Alarm:** Add a screenshot of the target tracking alarm in the "In alarm" state.
