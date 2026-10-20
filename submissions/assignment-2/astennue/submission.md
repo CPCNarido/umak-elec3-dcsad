@@ -14,7 +14,7 @@ How to use this template:
 - GitHub username: astennue
 - Section: IV-DCSAD
 - IAM user name that I signed in with: dcsad-g06
-- X: 104
+- X: 127
 
 ---
 
@@ -126,8 +126,8 @@ Only instances or resources that are explicitly assigned to the same default sec
 
 ### B1. Plan two subnets
 
-- Public subnet CIDR: 10.104.0.0/24
-- Private subnet CIDR: 10.104.1.0/24
+- Public subnet CIDR: 10.127.0.0/24
+- Private subnet CIDR: 10.127.1.0/24
 
 ### B2. Route tables
 
@@ -135,14 +135,14 @@ Route table of the public subnet:
 
 | Destination | Target |
 | --- | --- |
-| 10.104.0.0/16 | local |
+| 10.127.0.0/16 | local |
 | 0.0.0.0/0 | internet gateway |
 
 Route table of the private subnet:
 
 | Destination | Target |
 | --- | --- |
-| 10.104.0.0/16 | local |
+| 10.127.0.0/16 | local |
 
 ### B3. My VPC diagram
 
