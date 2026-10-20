@@ -1,0 +1,8 @@
+ANSWER_1: The error log states that it "cannot read /etc/course-portal/portal.conf" because of "Permission denied", which means that access has been denied for the user.
+ANSWER_2: The line "-rw------- 1 root course-portal 248 Aug 31 18:10 portal.conf" contains -rw------- which means that the .conf file is only able to be read and written by the owner, which is root. The group and others have no permissions. The course-portal user is part of the course-portal group, but since the group has no permissions, the user cannot read the file.
+ANSWER_3: 640
+ANSWER_3_WHY: '400' states that only the owner can read, which means the group will still have no access. '755' states that permissions will include 'execute' for the owner, group, and the others, which gives more permission than necessary. And then '777' gives everyone the read, write, and execute access, which is not necessary. Therefore, the best option is '640'.
+ANSWER_4_ORDER: B, G, E, D, F, A, I, C, H
+ANSWER_5: A risk of using 'chmod 777' is that everyone will have access to the file, which means that any user, no matter their role-based permission, can modify the configuration file.
+ANSWER_6: A piece of evidence that proves recovery is successful beyond a successful command, is that the Course Materials Portal works again and users can access it without receiving the permission denied error, and also they are only able to access what is within their permission.
+ANSWER_7_BRIDGE: component=file permissions, detect=monitoring, recover=permission change, proof=successful application response
