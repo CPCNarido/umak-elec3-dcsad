@@ -1,0 +1,8 @@
+ANSWER_1: When the Course Materials Portal application started, it tried to read its configuration file at /etc/course-portal/portal.conf, but the read was denied due to insufficient permissions.
+ANSWER_2: The owner, root, has permission to read and write the file. The course-portal account is trying to access it as a member of the file's group, but that group has insufficient permission to read portal.conf
+ANSWER_3: 640.
+ANSWER_3_WHY: Because it gives the group exactly the read access it needs. 400 doesn't fix the problem at all, since it gives the group no permission. 755 and 777 both fix the read problem too, but they add more than necessary and 755 gives the group execute access, which a config file doesn't need, and 777 goes even further by giving everyone on the system full read, write, and execute access, which is unnecessary and risky.
+ANSWER_4_ORDER: B, G, E, D, F, A, I, C, H
+ANSWER_5: Using chmod 777 gives everyone on the system full read, write, and execute access to portal.conf, not just the owner and the intended group. This is risky because any unauthorized user could modify or overwrite the file, there will be a possibility of breaking the service or introducing malicious changes.
+ANSWER_6: "After applying the fix, I would check /var/log/course-portal/app.log again and confirm the 'Permission denied' error no longer appears. This shows the application can actually read its configuration and is running normally, not just that the file itself is readable.
+ANSWER_7_BRIDGE: component= File Permission, detect= Monitoring, recover= Recovery Plan, proof= health checks
