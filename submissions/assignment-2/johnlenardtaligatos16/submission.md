@@ -24,20 +24,20 @@ How to use this template:
 
 Default VPC IPv4 CIDR:
 
-[ENTER THE IPv4 CIDR SHOWN FOR THE DEFAULT VPC IN AWS]
+172.31.0.0/16
 
 Number of addresses in that CIDR:
 
-[ENTER THE NUMBER OF IPv4 ADDRESSES SHOWN IN AWS]
+65,536
 
 
 ### A2. The subnets
 
 | Availability Zone | IPv4 CIDR |
 | --- | --- |
-| [ENTER AWS VALUE] | [ENTER AWS VALUE] |
-| [ENTER AWS VALUE] | [ENTER AWS VALUE] |
-| [ENTER AWS VALUE] | [ENTER AWS VALUE] |
+| [ap-southeast-1a] | [172.31.32.0/20] |
+| [ap-southeast-1b] | [172.31.16.0/20] |
+| [ap-southeast-1c] | [172.31.0.0/20] |
 
 Screenshot 1. Save it as `screenshot-1-subnets.png` in your folder. The image line below shows it.
 
@@ -63,8 +63,8 @@ The missing addresses are reserved by AWS for network and subnet functions, incl
 
 | Destination | Target |
 | --- | --- |
-| [ENTER AWS VALUE] | [ENTER AWS VALUE] |
-| [ENTER AWS VALUE] | [ENTER AWS VALUE] |
+| [172.31.0.0/16] | [local] |
+| [0.0.0.0/0] | [igw-0943e7e6f88293168] |
 
 Screenshot 2. Save it as `screenshot-2-routes.png` in your folder. The image line below shows it.
 
