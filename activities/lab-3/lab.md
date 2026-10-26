@@ -5,7 +5,7 @@ counts_toward: Final Class Standing, Lab Activities (30%)
 duration: 60 minutes, in the second hour of the class
 mode: Group. One Pull Request per group in this repository, then the Pull Request link in the Google Form.
 coverage: CIDR blocks, dividing a VPC into equal subnets, subnets of a given size, sizing subnets from a host count, the five AWS reserved addresses, checking a subnet block
-due: 11:59 PM (Asia/Manila) on the night of your section's class
+due: 11:59 PM (Asia/Manila), Wednesday 2026-10-28
 ---
 
 # Lab 3: VPC Subnet Planning Case Study
