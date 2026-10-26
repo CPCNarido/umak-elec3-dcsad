@@ -43,6 +43,7 @@ currently-active ones are:
 | [`activities/lab-1/`](activities/lab-1/) | Lab 1: Write and Attach an IAM Policy |
 | [`activities/lab-2/`](activities/lab-2/) | Lab 2: Build an EC2 Auto Scaling Group |
 | [`activities/assignment-2/`](activities/assignment-2/) | Assignment 2: Explore a VPC |
+| [`activities/lab-3/`](activities/lab-3/) | Lab 3: VPC Subnet Planning Case Study |
 | [`templates/`](templates/)                         | Shared templates (evidence write-ups, etc.)                      |
 | [`submissions/`](submissions/)                     | Where your work goes — one folder per person/group, per activity |
 | [`.github/`](.github/)                             | PR template and the CI workflow that checks submissions          |
