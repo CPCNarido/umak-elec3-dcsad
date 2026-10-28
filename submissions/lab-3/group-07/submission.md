@@ -71,3 +71,4 @@ usable = 192.168.164.132 to 192.168.164.254
 | P2 | 192.168.168.0/23 | Not valid | It is outside the VPC, which ends at 192.168.167.255. |
 | P3 | 192.168.167.0/30 | Not valid | A /30 is smaller than /28, the smallest subnet that AWS allows. |
 | P4 | 192.168.165.164/25 | Not valid | It does not start on a step for a /25. The valid block that holds the address is 192.168.165.128/25. |
+
